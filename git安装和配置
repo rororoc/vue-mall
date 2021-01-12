@@ -1,0 +1,33 @@
+环境变量配置 
+  右键计算机--高级--环境变量
+  复制git安装地址到path里 cmd命令行就能使用git
+配置vscode的git地址
+  文件--首选项--设置--搜索git.path打开setting.json
+  添加"git.path":"git实际安装地址"
+
+存储密码-SSH添加密码  config 英文就是配置的意思
+    git --version 查看git版本
+
+    git config --list  查看当前项目配置文件
+    git config --global user.name "wangpeng"
+    git config --global user.email "269945214@qq.com"
+    git config --global credential.helper store //设置信用凭证 让vscode 记住账号密码
+    ssh-keygen -t rsa -C "youremail@example.com" 
+                -t是type  
+                rsa（非对称加密方式）类型 
+                -C指定地址
+                非对称加密方式会生成一个公钥和私钥 两把钥匙
+	公钥添加到服务器里
+	私钥保存在本地
+
+/.ssh/id_rsa 本地私钥
+/.ssh/id_rsa.pub 公钥
+
+查看公钥
+方法一
+cd ~/.ssh
+ls
+cat id_rsa.pub
+
+方法二
+cat ~/.ssh/id_rsa.pub
