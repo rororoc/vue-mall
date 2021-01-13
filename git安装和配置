@@ -31,3 +31,13 @@ cat id_rsa.pub
 
 方法二
 cat ~/.ssh/id_rsa.pub
+
+①vscode记住git账号密码
+  git config --global credential.helper store
+
+②ssh-keygen -t rsa -C "youremail@example.com"  生成公钥
+  打开github 码云之类的托管网站
+  打开账户设置--管理ssh密钥
+  (必须是git clone SSH方式才行)
+
+安装git history diff

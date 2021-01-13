@@ -1,0 +1,4 @@
+创建项目
+  vue create xxx
+  npm run serve
+    (vue ui 可视化管理项目)
